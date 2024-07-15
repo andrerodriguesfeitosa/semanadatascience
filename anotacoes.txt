@@ -1,0 +1,4 @@
+Panda:
+
+pip install pandas
+pip freeze ou pip list (mostra as versões)
