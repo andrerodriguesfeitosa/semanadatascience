@@ -1,0 +1,25 @@
+Explicação:
+url = "dataset/Combined_Data.csv"
+
+Descrição: Aqui, a variável url é atribuída com uma string que representa o caminho para um arquivo CSV chamado Combined_Data.csv localizado na pasta dataset.
+Papel no Código: Esta variável url é usada como argumento para a função pd.read_csv() para indicar onde o arquivo CSV está localizado.
+dados = pd.read_csv(url, sep=",")
+
+Descrição: Esta linha usa a função pd.read_csv() da biblioteca pandas para ler o arquivo CSV especificado pela variável url.
+url: O caminho para o arquivo CSV.
+sep=",": Especifica que o delimitador entre as colunas no arquivo CSV é uma vírgula (,). Isso é o padrão para arquivos CSV, então, mesmo sem especificar sep=",", a função pd.read_csv() ainda leria corretamente o arquivo, mas é uma prática boa e explícita especificar o delimitador.
+Resultado: A função pd.read_csv() lê o arquivo CSV e retorna um DataFrame dados. O DataFrame é uma estrutura de dados bidimensional semelhante a uma tabela, onde cada linha representa um registro e cada coluna representa um campo ou atributo do registro.
+dados.head(10)
+
+Descrição: A função head() é um método do DataFrame que retorna as primeiras n linhas do DataFrame. Aqui, 10 é o argumento passado para head(), o que significa que estamos solicitando as primeiras 10 linhas do DataFrame.
+Resultado: dados.head(10) exibe as primeiras 10 linhas do DataFrame dados, permitindo uma visão rápida dos dados carregados.
+Resumo do Código
+Definição do Caminho do Arquivo:
+
+O caminho para o arquivo CSV é armazenado na variável url.
+Leitura do Arquivo CSV:
+
+O arquivo CSV é lido usando pd.read_csv() e o DataFrame resultante é armazenado na variável dados.
+Visualização dos Dados:
+
+As primeiras 10 linhas do DataFrame dados são exibidas com dados.head(10), o que permite verificar rapidamente o conteúdo do DataFrame e entender a estrutura dos dados.
